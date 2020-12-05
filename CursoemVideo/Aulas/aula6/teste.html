@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    
+<html>
+<body>
+    
+    <p>Note that write() does NOT add a new line after each statement:</p>
+    
+    <pre>
+    <script>
+    document.write("Hello World!");
+    document.write("Have a nice day!");
+    </script>
+    </pre>
+    
+    <p>Note that writeln() add a new line after each statement:</p>
+    
+    <pre>
+    <script>
+    document.writeln(`Hello World!`);
+    document.write("Have a nice day!");
+    </script>
+    <script>
+        var nome = window.prompt('Qual é o seu nome? ')
+       // document.write('Seu nome tem ' + nome.length + ' letras')
+        document.writeln(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras!`); // <br/>  => mudança de linha Break Row
+        document.writeln(`Seu nome em letras maiúscula é ${nome.toUpperCase()}`)
+        document.writeln(`Seu nome em letras minusculas é ${nome.toLowerCase()}`)
+    </script>
+    </pre>
+    
+    </body>
+    </html>
+    
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(60, 125, 199);
+            color: white;
+            font: normal 18pt Ebrima;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando estudos DOM </h1>
+    <h2>Aqui vai o resultado:</h2>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <p>Isto é muito interessante!!!</p>
+    <div id = 'msg'>Clique em mim</div>
+    <div name = 'msg'>Uma segunda div !!!</div>
+    <script>
+        var lembrete = 'A template string só funciona quando usamos a crase no lugar das aspas.'
+        var msg = 'Isto está ficando muito interessante!!!' 
+        window.document.write('Olá, Mundo!!</br>')
+        window.document.write(window.document.charset, '</br>') /* charset - mostra o código de configuração de caracteres */
+        window.document.write(window.document.URL)
+        window.document.write(`</br>${lembrete}</br>`)
+        window.document.write(`${msg}</br>`)
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ', p1.innerText)
+        p1.style.color = 'red'
+        /*var corpo = window.document.getElementsByTagName('body') */
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+        var d = window.document.getElementById('msg') /* selecionando a div pela Id */
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando ...' /* Alterando por JavaScript o conteúdo da div usando o DOM */
+        /* Alterando o conteudo da div, usando o comando completo: */
+        window.document.getElementById('msg').innerText = 'Modificando a div, usando o comando completo!!!'
+        var f = window.document.getElementsByName('msg')[0]
+        f.innerText = 'Olá! Eu sou a segunda div!'
+        /* Usando o selector: */
+        g = window.document.querySelector('div#msg')
+        g.style.color = 'blue'
+        g.style.background ='white'
+        </script>
+</body>
+
+</html>

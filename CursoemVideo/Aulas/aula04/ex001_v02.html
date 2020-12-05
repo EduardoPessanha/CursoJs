@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>               <!--A parte da cabeça (head) é a área de configurações--> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex001-Meu Primeiro Documento</title>
+    <style> /*A parte entre as tags <style> é parte CSS*/
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+        h1 {
+            color: rgb(241, 241, 14);
+        }
+        p {
+            font-size: 18pt smaller;
+            color: rgb(23, 221, 23);
+            
+        }
+        p1{
+            color: rgba(255, 0, 0, 0.979);
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body> <!--A parte do corpo(body) é a parte que irá aparecer-->
+    <h1>Olá, Mundo!</h1>
+    <p1> Já me livrei da maldição </p1>
+    <p>No javaScript moderno, além de utilizar a palavra 'var', tambem
+       podemos utilizar a palavra 'let' para identificar uma variável.</P>
+    <p>O nome de cada variável chama-se IDENTIFICADOR</p>
+        <p>- Podem começar com letras, $ ou _</p>
+        <p>- NÃO podem começar com NÚMEROS</p>
+        <p>- É possível usar letras ou NÚMEROS</p>
+        <p>- É possível usar acentos ou símbolos</p>
+        <p>- NÃO podem conter espaços</p>
+        <p>- NÂO podem usar palavras reservadas</p>
+    <script> // A parte entre as tags <script> é a parte em JavaScript
+        window.alert('Minha primeira mensagem!')  /* mostra uma mensagem na tela */
+        window.confirm('Está gostando de JS?')
+        window.prompt ('Qual é o seu nome? ')     /* Vai perguntar o seu nome ...*/
+    </script>
+</body>
+
+</html>
