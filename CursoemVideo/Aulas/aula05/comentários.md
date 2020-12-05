@@ -1,4 +1,4 @@
-## COMENTÁRIOS NO jAVASCRIPT:
+## COMENTÁRIOS NO JAVASCRIPT:
 
 No JavaScript podemos usar dois tipos de simbologia para comentários;
     
