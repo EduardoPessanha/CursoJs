@@ -106,7 +106,8 @@ var s = 'Javascript'
 
 ### Formatando Números:
 
-**n.toFixed()**
+**n.toFixed()** Retorna uma String, que representa um número com número de casas decimais definido.
+
 
 -> var n1 = 1234.5<br/>
 undefined<br/>
