@@ -3,23 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ex004-Document</title>
+    <title>Document</title>
     <style>
-        body {
-            font: normal 14pt Ebrima;
-        }
+        body{
+            font-size: 20px;
+        }    
     </style>
-    </body>
 </head>
 <body>
-   <!-- <pre>> -->
     <script>
         var nome = window.prompt('Qual é o seu nome? ')
-       // document.write('Seu nome tem ' + nome.length + ' letras')
-        document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras!</br>`); // <br/>  => mudança de linha Break Row
-        document.write(`Seu nome em letras maiúscula é ${nome.toUpperCase()}</br>`)
-        document.write(`Seu nome em letras minusculas é ${nome.toLowerCase()}`)
+        document.write(`Olá, <strong>${nome}!</strong> Seu nome tem ${nome.length} letras.<br\>`) // <br\> -> quebra de linha
+        document.write(`Seu nome em maiúscula é ${nome.toUpperCase()}<br\>`)
+        document.write(`Seu nome em minúscula é ${nome.toLowerCase()}`)
     </script>
-   <!-- </pre>> -->
 </body>
 </html>

@@ -20,18 +20,9 @@
     <h1>Olá, mundo!</h1>    <!--<h1></h1> -> Título de nivel 1-->
     <p>Já me livrei da maldição!</p>  <!--  <p></p> -> Parágrafo -->
     <!-- /Dentro da tag <script></script> a linguagem é javaScript */ -->
-    <script>
-    // var n1 = window.prompt('Digite um número: ')  // window.prompt retorna tipo string
-    // var n2 = window.prompt('Digite outro número: ') // retorna string
-    // // para fazer a soma de n1 e n2, será preciso fazer a conversão de string para number!:
-    var n1 = Number.parseInt(window.prompt('Digite um número: '))
-    var n2 = Number.parseInt(window.prompt('Digite outro número: '))
-    var s = n1 + n2 
-    window.alert('A soma de n1 + n2 é ' + s) // + -> concatenação
-    // + -> (string + string) -> para concatenação
-    // + -> (number + number) -> para adição
-    window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
-
+    <script>      
+        var nome = window.prompt('Qual é o seu nome? ') // Vai perguntar o nome ...
+        window.alert('É um prazer em te conhecer, '+ nome + '!') // + -> concatenação
     </script>
 </body>
 </html>
