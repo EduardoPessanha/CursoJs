@@ -122,7 +122,7 @@ var s = 'Javascript'
     > n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})
       'R$ 1.234,50'
 
-### Operadores do JavaScript
+## Operadores do JavaScript
 
     . Aritméticos
     . Atribuição
@@ -130,7 +130,7 @@ var s = 'Javascript'
     . Lógicos
     . Ternários
 
-__Aritméticos:__
+### __Aritméticos:__
 
     +  -> soma
     -  -> subtração
@@ -148,11 +148,11 @@ __Ordem de precedência__
 ![precedencia](https://user-images.githubusercontent.com/68357896/101282278-f475cf80-37b2-11eb-9e25-0f5cfc99b1ae.png)
 
 
-__Atribuição__
+### __Atribuição__
 
 ![atribuicaosimples](https://user-images.githubusercontent.com/68357896/101282546-9c3fcd00-37b4-11eb-9b6c-7b9e4b4b8309.png)
 
-__Auto-atribuição__
+### __Auto-atribuição__
 
     var n = 3  --> 3
     n = n + 4  ->  n += 4  --> 7
@@ -162,14 +162,14 @@ __Auto-atribuição__
     n = n ** 2 ->  n **= 2 --> 16
     n = n % 5  ->  n %= 5  --> 1
 
-__Incremento__
+### __Incremento__
 
     var x = 5
     x = x + 1 -> x += 1 -> x++ --> 6
     x = x - 1 -> x -= 1 -> x-- --> 5
 
 
-__Relacionais__
+### __Relacionais__
 
 Para toda expressão que tenha um operador relacional ligado a ela, o resultado dessa expressão será sempre um valor booleano, ou seja, será um valor do tipo __*Verdadeiro*__ ou __*Falso*__.
 
@@ -183,7 +183,7 @@ Para toda expressão que tenha um operador relacional ligado a ela, o resultado 
 
 3. Quando temos operadores relacionais e aritméticos na mesma expresão, primeiro resolvemos os operadores aritméticos para depois resolver os operadores relacionais.
 
-__Identidade__
+### __Identidade__
 
 O operador de igualdade (__==__) no JavaScript não testa o tipo:
 
@@ -198,7 +198,7 @@ O operador de identidade, ou operador de igualdade restrita, __===__, que testa 
     5 != '5'  ---> false
     5 !== '5' ---> true (desigualdade restrita)
 
-__Operadores Lógicos__
+### __Operadores Lógicos__
 
     !  - negação   ( não - not ) - operador unário
     && - conjunção ( e - and )   - operador binário
@@ -211,13 +211,47 @@ __Operadores Lógicos__
 
 ![disjuncao](https://user-images.githubusercontent.com/68357896/101287407-e33abc00-37ce-11eb-8b62-362f9d96a237.png)
 
+*Atenção:*
+
+1. Quando temos operadores relacionais, aritméticos e logicos na mesma expresão, primeiro resolvemos os operadores aritméticos depois os operadores relacionais, para depois resolver os operadores lógicos.
+2. Quando temos em uma expressao somente operadores lógicos, a ordem de precedência é: primeiro o "não" (negação), depois o "e" (conjunção) e por fim o "ou" (disjunção).
+>
+
+    > var a = 5
+    > var b = 8
+    > a > b && b % 2 == 0
+    > false
+    > a <= b || b / 2 == 2
+    > true
+
+__Resumo de Precedência__
+
+![precedencia01](https://user-images.githubusercontent.com/68357896/101293056-05920100-37f2-11eb-9af4-73fa1350f27e.png)
+
+### __Ternários__
+
+![ternario](https://user-images.githubusercontent.com/68357896/101294012-59511a00-37f3-11eb-9207-1d837fabe0bb.png)
+
+O primeiro operando é um teste lógico, o operando do meio é o que acontece se o teste lógico for verdadeiro e o operando do final é o que acontece se o teste lógico for falso.
+
+    média >= 7.0 ? "Aprovado" : "Reprovado"
+    No node.js:
+    > var media = 5.5
+      undefined
+    > media >= 7.0 ? 'Aprovado' : 'Reprovado'
+      'Reprovado'
+    > media += 3
+      8.5
+    > media >= 7.0 ? 'Aprovado' : 'Reprovado'
+      'Aprovado'
+    > 
+    > var x = 8
+      undefined
+    > var res = x % 2 == 0 ? 5 : 9
+      undefined
+    > res
+      5
+    >
 
 
-
-
-
-
-
-
-
-[moduloB_aula08](https://www.cursoemvideo.com/course/javascript/aulas/comandos-basicos-do-javascript/modulos/operadores-parte-2/)
+[moduloC](https://www.cursoemvideo.com/course/javascript/aulas/entendendo-o-dom/)
