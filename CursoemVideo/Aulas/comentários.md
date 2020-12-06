@@ -80,22 +80,22 @@ var s = 'Javascript'
 
 'Eu estou aprendendo " + s (faz concatenação)-> Eu estou aprendendo JavaScript -> forma tradiconal!
 
--> var nome = 'Gustavo'<br/>
-undefined<br/>
--> var idade = 41<br/>
-undefined<br/>
--> var nota = 5.5<br/>
-undefined<br/>
--> 'O aluno ' + nome + ' de ' + idade + ' de idade tirou nota ' + nota<br/>
-'O aluno Gustavo de 41 de idade tirou nota 5.5'
-> 
+    > var nome = 'Gustavo'
+      undefined
+    > var idade = 41
+      undefined
+    > var nota = 5.5
+      undefined
+    > 'O aluno ' + nome + ' de ' + idade + ' de idade tirou nota ' + nota
+      'O aluno Gustavo de 41 de idade tirou nota 5.5'
+    > 
 #### Template String:
 
 Para usar a template string é obrigatório o uso da crase como delimitador!
 
--><br/> 
--> `O aluno ${nome} de ${idade} anos de idade tirou nota ${nota}`<br/>
-'O aluno Gustavo de 41 anos de idade tirou nota 5.5'
+    >
+    > `O aluno ${nome} de ${idade} anos de idade tirou nota ${nota}`
+      'O aluno Gustavo de 41 anos de idade tirou nota 5.5'
  
 
 var s = 'Javascript'
@@ -109,17 +109,63 @@ var s = 'Javascript'
 **n.toFixed()** Retorna uma String, que representa um número com número de casas decimais definido.
 
 
--> var n1 = 1234.5<br/>
-undefined<br/>
--> n1<br/>
-1234.5<br/>
--> n1.toFixed(2)<br/>
-'1234.50'<br/>
--><br/>
--> n1.toFixed(2).replace('.', ',')<br/>
-'1234,50'<br/>
--><br/>  
--> n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})<br/>
-'R$ 1.234,50'
+    > var n1 = 1234.5
+      undefined
+    > n1
+      1234.5
+    > n1.toFixed(2)
+      '1234.50'
+    >
+    > n1.toFixed(2).replace('.', ',')
+      '1234,50'
+    >  
+    > n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})
+      'R$ 1.234,50'
 
-[moduloB_aula07_parte1](https://www.cursoemvideo.com/course/javascript/aulas/comandos-basicos-do-javascript/modulos/operadores-parte1/)
+### Operadores do JavaScript
+
+    . Aritméticos
+    . Atribuição
+    . Relacionais
+    . Lógicos
+    . Ternários
+
+__Aritméticos:__
+
+    +  -> soma
+    -  -> subtração
+    *  -> multiplicação
+    /  -> divisão (retorna sempre um número Real)
+    %  -> é o resto da divisão
+    ** -> potência
+
+![aritmeticos01](https://user-images.githubusercontent.com/68357896/101282318-474f8700-37b3-11eb-95f2-7f6bab98085b.png)
+
+Obs.: __% -> é o resto da divisão inteira!!!__
+
+__Ordem de precedência__
+
+![precedencia](https://user-images.githubusercontent.com/68357896/101282278-f475cf80-37b2-11eb-9e25-0f5cfc99b1ae.png)
+
+
+__Atribuição__
+
+![atribuicaosimples](https://user-images.githubusercontent.com/68357896/101282546-9c3fcd00-37b4-11eb-9b6c-7b9e4b4b8309.png)
+
+__Auto-atribuição__
+
+    var n = 3  --> 3
+    n = n + 4  ->  n += 4  --> 7
+    n = n - 5  ->  n -= 5  --> 2
+    n = n * 4  ->  n *= 4  --> 8
+    n = n / 2  ->  n /= 2  --> 4
+    n = n ** 2 ->  n **= 2 --> 16
+    n = n % 5  ->  n %= 5  --> 1
+
+__Incremento__
+
+    var x = 5
+    x = x + 1 -> x += 1 -> x++ --> 6
+    x = x - 1 -> x -= 1 -> x-- --> 5
+
+[moduloB_aula08](https://www.cursoemvideo.com/course/javascript/aulas/comandos-basicos-do-javascript/modulos/operadores-parte-2/)
