@@ -168,4 +168,56 @@ __Incremento__
     x = x + 1 -> x += 1 -> x++ --> 6
     x = x - 1 -> x -= 1 -> x-- --> 5
 
+
+__Relacionais__
+
+Para toda expressão que tenha um operador relacional ligado a ela, o resultado dessa expressão será sempre um valor booleano, ou seja, será um valor do tipo __*Verdadeiro*__ ou __*Falso*__.
+
+![relacionais](https://user-images.githubusercontent.com/68357896/101285683-46bfec00-37c5-11eb-8e03-98b8f4f4b78f.png)
+
+*Atenção:*
+
+1. Um símbolo de __=__ no JavaScript (como em outras linguagens de programação) é um operador de atribuição (le-se como __recebe__). O operador de igualdade no JavaScript é __==__.
+
+2. __!=__ -> quer dizer "não igual", diferente.
+
+3. Quando temos operadores relacionais e aritméticos na mesma expresão, primeiro resolvemos os operadores aritméticos para depois resolver os operadores relacionais.
+
+__Identidade__
+
+O operador de igualdade (__==__) no JavaScript não testa o tipo:
+
+        5 == 5   ---> true
+        5 == '5' ---> true
+
+O operador de identidade, ou operador de igualdade restrita, __===__, que testa se os dois operandos são idênticos e do mesmo tipo.
+
+
+    5 === '5' ---> falso (apesar dos dois operandos terem o 
+                   mesmo valor, eles são de tipos diferentes).
+    5 != '5'  ---> false
+    5 !== '5' ---> true (desigualdade restrita)
+
+__Operadores Lógicos__
+
+    !  - negação   ( não - not ) - operador unário
+    && - conjunção ( e - and )   - operador binário
+    || - disjunção ( ou - or )   - operador binário
+
+![negação](https://user-images.githubusercontent.com/68357896/101287405-dfa73500-37ce-11eb-95ba-3255667d7e71.png)
+
+![conjuncao](https://user-images.githubusercontent.com/68357896/101287331-64458380-37ce-11eb-8ca8-eb6226d3d9a0.png)
+
+
+![disjuncao](https://user-images.githubusercontent.com/68357896/101287407-e33abc00-37ce-11eb-8b62-362f9d96a237.png)
+
+
+
+
+
+
+
+
+
+
 [moduloB_aula08](https://www.cursoemvideo.com/course/javascript/aulas/comandos-basicos-do-javascript/modulos/operadores-parte-2/)
