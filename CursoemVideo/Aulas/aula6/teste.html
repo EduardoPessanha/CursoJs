@@ -23,11 +23,14 @@
     
     <pre>
     <script>
-    document.writeln(`Hello World!`);
+    document.writeln(`<br/>Hello World!`);
     document.write("Have a nice day!");
     </script>
     <script>
         var nome = window.prompt('Qual é o seu nome? ')
+        resp1 = 'Você <strong>não</strong> digitou o seu nome!!!!'
+        resp2 = `Seu nome é ${nome}`
+    nome == '' ? document.writeln(`<br/>${resp1}`) : document.writeln(`<br/>${resp2}`)
        // document.write('Seu nome tem ' + nome.length + ' letras')
         document.writeln(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras!`); // <br/>  => mudança de linha Break Row
         document.writeln(`Seu nome em letras maiúscula é ${nome.toUpperCase()}`)

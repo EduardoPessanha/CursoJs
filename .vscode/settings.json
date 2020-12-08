@@ -2,5 +2,10 @@
     "cSpell.words": [
         "Maiúsculas",
         "alfabéticos",
+    ],
+    "cSpell.ignoreWords": [
+        "atribuicaosimples",
+        "cursoem",
+        "video"
     ]
 }

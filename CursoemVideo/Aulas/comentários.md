@@ -234,6 +234,8 @@ __Resumo de Precedência__
 
 O primeiro operando é um teste lógico, o operando do meio é o que acontece se o teste lógico for verdadeiro e o operando do final é o que acontece se o teste lógico for falso.
 
+Podemos afirmar que o atributo __ternário__ opera de forma semelhante a condicional __"if"__
+
     média >= 7.0 ? "Aprovado" : "Reprovado"
     No node.js:
     > var media = 5.5
@@ -252,6 +254,21 @@ O primeiro operando é um teste lógico, o operando do meio é o que acontece se
     > res
       5
     >
+
+## __DOM__
+
+
+DOM = __D__ ocument __O__ bject __M__ odel:
+
+É um modelo de objetos para documentos -> basicamente é um conjunto de objetos dentro do seu navegador que vai dar acesso aos componentes internos do website!
+
+### Árvore DOM
+
+![arvore_DOM](https://user-images.githubusercontent.com/68357896/101432177-25572100-38e7-11eb-9cdc-c4bbf7149cad.png)
+
+
+
+
 
 
 [moduloC](https://www.cursoemvideo.com/course/javascript/aulas/entendendo-o-dom/)
