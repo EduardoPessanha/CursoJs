@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id='msg'>Clique em mim</div>
+    <div name='msg'>Selecionando por name (nome)</div>
+    <div class='msg'>Selecionando por class (classe)</div>
+    <script>
+        window.document.write('Olá, Mundo!<br/>')
+        window.document.write(window.document.charset + '<br/>') // charset -> mostra o set de caracteres
+        window.document.write(window.navigator.appName + '<br/>')
+        window.document.write(window.document.URL + '<br/>') // mostra a URL que esta sendo acessada
+        //SELECIONANDO OS ELEMENTOS DA ÁRVORE DOM POR TAG:
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: ->  ' + p1.innerText)
+        // p1.style.color = 'blue'
+        // corpo.style.background = 'black'
+        window.document.write('<br/>' + p1.innerHTML) // innerHTML mostra o texto com a formatação
+        // window.alert(p1.innerText) // innerText pega o texto sem as filhas, sem a formatação
+        //SELECIONANDO OS ELEMENTOS DA ÁRVORE DOM POR ID:
+        var d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        // d.innerText='Estou aguardando ...' // alterando o conteúdo original por JavaScript usando o DOM
+        //window.document.write('<br/>' + d.innerText)
+        //SELECIONANDO OS ELEMENTOS DA ÁRVORE DOM POR NAME:
+        var n = window.document.getElementsByName('msg')[0] //Quando Element estiver no plural é necessário  identificar o elemento -> [x]
+        window.document.write('<br/>' + n.innerText)
+        n.style.background = 'black'
+        // n.innerText = 'Teste'
+        //SELECIONANDO OS ELEMENTOS DA ÁRVORE DOM POR CLASS:
+        var c = window.document.getElementsByClassName('msg')[0]
+        c.style.background = 'red'
+        //SELECIONANDO OS ELEMENTOS DA ÁRVORE DOM POR Selector:
+        var q =window.document.querySelector('div#msg') // se for ID usar "#", se for class usar ".".
+        q.style.color = 'black'
+        q.style.background = 'white'
+        
+    </script>
+</body>
+</html>

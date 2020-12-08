@@ -257,18 +257,47 @@ Podemos afirmar que o atributo __ternário__ opera de forma semelhante a condici
 
 ## __DOM__
 
+Aprendendo a usar DOM em JavaScript
 
-DOM = __D__ ocument __O__ bject __M__ odel:
+DOM = **D**ocument **O**bject **M**odel:
 
-É um modelo de objetos para documentos -> basicamente é um conjunto de objetos dentro do seu navegador que vai dar acesso aos componentes internos do website!
+É um modelo de objetos para documentos, basicamente é um conjunto de objetos dentro do seu navegador que vai dar acesso aos componentes internos do website!  É a vertente WEB do JavaScript e é formado por um conjunto de objetos do Javascript para o tratamento dos componentes visuais.
 
 ### Árvore DOM
 
 ![arvore_DOM](https://user-images.githubusercontent.com/68357896/101432177-25572100-38e7-11eb-9cdc-c4bbf7149cad.png)
 
+**window** é a raiz da árvore DOM.
+
+Da raiz **window** derivam-se vários outros objetos, como:
+
+	- location - mostra a localização do site: URL, 
+                 página atual, páginas visitadas, etc
+	- document - é o documento atual
+	- history  - guarda os caminhos percorridos dentro do site
+                 (de onde você veio e para onde você vai)
+
+De cada um desses objetos derivam-se vários outros, como por exemplo:
+dentro de  document nos temos o html
+dentro do html nos temos o head e o body → head e body são filhos (child) de html
+já o html é um parent (pai) de head e body
+dentro de head temos meta, title, etc e dentro do body temos h1, p, p, div, etc
+
+Tudo que aparece dentro da árvore DOM são chamados de **elementos**.
+
+Nós podemos navegar dentro da árvore DOM pelos seus elementos, e para isso existem vários métodos para selecionarmos esses elementos:
+
+Selecionando:
+
+- Métodos de acesso:
+    - por Marca (Tag) → getElementsByTagName()
+    - pro ID → getElementById()
+    - por Nome (Name) → getElementsByName()
+    - por Classe (Class) → getElementsByClassName()
+    - por Seletor (recurso mais recente) → querySelector() / querySelectorAll() -> Id => é representada por  **#**(hashtag)  e a Class é representada por **.**(ponto)
 
 
 
 
+[moduloC-Aula10](https://www.cursoemvideo.com/course/javascript/aulas/entendendo-o-dom/modulos/eventos-dom/)
 
-[moduloC](https://www.cursoemvideo.com/course/javascript/aulas/entendendo-o-dom/)
