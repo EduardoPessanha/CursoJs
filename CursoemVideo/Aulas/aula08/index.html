@@ -6,13 +6,13 @@
     <title>Exemplos</title>
     <!-- <img>CursoemVideo/imagem/negação.png</img> -->
     
-    <link img = http://127.0.0.1:5500/CursoemVideo/Aulas/imagem/negação.png >
+    <!-- <link img = http://127.0.0.1:5500/CursoemVideo/Aulas/imagem/negação.png > -->
     <style>
         body {
             background-color: rgb(77, 77, 95);
             color: rgb(68, 224, 29);
             font: italic 22pt Segoe UI;
-            
+            text-align: center;
         }
         h1 {
             color: rgb(255, 255, 0);
@@ -26,20 +26,19 @@
 </head>
 <body>
 
-    <h1>Estudando JavaScript</h1>
+    <h1 id='titulo'>Estudando JavaScript</h1>
     <p>Puxa que bom, muito legal</p>
 
     <script>
-
-        var teste = '/home/edulinux/Documentos/JavaScript/CursoJS/CursoemVideo/imagem/negação.png'
-
+        var a = document.getElementById('titulo')
+        // var teste = '/home/edulinux/Documentos/JavaScript/CursoJS/CursoemVideo/imagem/negação.png'
+        
         var texto1 = "No javaScript para criar uma variável usamos a palavra <strong>'var'</strong>, e no JavaScript atual (moderno), também podemos utilizar a palavra <strong>'let'</strong> para criar uma variável."
         // document.write('<br/>')
         document.write('Olá, Mundo!<br/>')
         document.write(`${texto1}<br/>`)
-        
-
-        
+        a.innerText = a.innerText.toUpperCase()
+        // a.innerText.
     </script>
 </body>
 </html>
