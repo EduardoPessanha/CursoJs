@@ -343,5 +343,5 @@ Se não nomearmos a função, ela é chamada de função anônima, e não vai oc
 
 
 
-[moduloC-Aula10](https://www.cursoemvideo.com/course/javascript/aulas/entendendo-o-dom/modulos/eventos-dom/)
+[moduloD-Aula11](https://www.cursoemvideo.com/course/javascript/aulas/condicoes-em-javascript/modulos/condicoes-parte-1-2/)
 
