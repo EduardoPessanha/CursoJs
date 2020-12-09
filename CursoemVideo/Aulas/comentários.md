@@ -310,6 +310,11 @@ Mais comum - eventos de mouse:
     - click      -> clica e solta rapidamente o botão do mouse
     - mouseout   -> mouse move para fora de uma área (DIV)
 
+
+
+![eventos_DOM](https://user-images.githubusercontent.com/68357896/101557031-e71b3980-399a-11eb-892a-37e9e32b082f.png)
+
+
 Eventos que podem acontecer dentro de elementos em JavaScript -> [Referência do evento](https://developer.mozilla.org/en-US/docs/Web/Events)
 
 Para se tratar um evento, é preciso antes saber o que é uma função ou funcionalidade.
