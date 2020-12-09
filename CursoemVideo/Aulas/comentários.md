@@ -294,7 +294,44 @@ Selecionando:
     - pro ID → getElementById()
     - por Nome (Name) → getElementsByName()
     - por Classe (Class) → getElementsByClassName()
-    - por Seletor (recurso mais recente) → querySelector() / querySelectorAll() -> Id => é representada por  **#**(hashtag)  e a Class é representada por **.**(ponto)
+    - por Seletor (recurso mais recente) → querySelector() / querySelectorAll() -> Id => é representada por  **#** (hashtag)  e a Class é representada por **.**(ponto)
+
+
+### Eventos DOM
+
+Evento é tudo aquilo que possa acontecer com um elemento.
+
+Mais comum - eventos de mouse:
+
+    - mouseenter -> entra em uma área (DIV)
+    - mousemove  -> mouse se movimenta em uma área (DIV)
+    - mousedown  -> clica o mouse e segura
+    - mouseup    -> momento em que solta o botão do mouse 
+    - click      -> clica e solta rapidamente o botão do mouse
+    - mouseout   -> mouse move para fora de uma área (DIV)
+
+Eventos que podem acontecer dentro de elementos em JavaScript -> [Referência do evento](https://developer.mozilla.org/en-US/docs/Web/Events)
+
+Para se tratar um evento, é preciso antes saber o que é uma função ou funcionalidade.
+
+*Uma função em JavaScript é um conjunto de códigos, um conjunto de linhas, que serão executadas só quando um evento ocorrer.*
+
+Essas linhas são denominadas de **bloco**
+
+Um bloco em javaScript é delimitado entre os sinais de chaves, então se abre chaves, coloca o seu código e fecha chaves.
+Esse bloco tem que ser nomeado como uma **"function"**.
+Para que o método possa funcionar a function tem que ter um nome.
+
+
+    function ação(param){
+
+      bloco
+
+    }
+
+Os parâmetros da função são opcionais.
+
+*__Os eventos podem ser configurados na parte HTML ou diretamente no JavaScript.__*
 
 
 
