@@ -336,6 +336,8 @@ Para que o método possa funcionar a function tem que ter um nome.
 
 Os parâmetros da função são opcionais.
 
+Se não nomearmos a função, ela é chamada de função anônima, e não vai ocorrer o evento.
+
 *__Os eventos podem ser configurados na parte HTML ou diretamente no JavaScript.__*
 
 
