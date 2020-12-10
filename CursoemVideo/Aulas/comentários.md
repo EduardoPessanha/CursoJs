@@ -340,6 +340,7 @@ Se não nomearmos a função, ela é chamada de função anônima, e não vai oc
 
 *__Os eventos podem ser configurados na parte HTML ou diretamente no JavaScript.__*
 
+### Condições
 
 
 

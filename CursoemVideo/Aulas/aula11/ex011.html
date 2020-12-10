@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font: normal 18pt Arial;
+        }
+        h1 {
+            text-align: center;
+            font: bold 25pt Segoe UI;
+            color: rgb(50, 25, 192);
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        div {
+            background-color: rgba(36, 48, 48, 0.253);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+   
+    País de origem: <input type="text" name="txt_pais" id="txt_pais">
+    <input type="button" value="VERIFICAR" onclick="check()">
+    <div id="res">analise</div>
+
+    <script>
+        function check() {
+            var pais = document.querySelector("#txt_pais")
+            res = document.querySelector("#res")
+            pais = String(pais.value)
+            res.innerHTML = `<p>Seu País de origem é: <strong>${pais}</strong></p>`
+            if (pais == "Brasil") {
+                res.innerHTML += `<p>você é brasileiro</p>`
+            }
+            else {
+                res.innerHTML += `<p>você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
