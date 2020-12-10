@@ -342,6 +342,15 @@ Se não nomearmos a função, ela é chamada de função anônima, e não vai oc
 
 ### Condições
 
+![Condições](https://user-images.githubusercontent.com/68357896/101831590-e4dcea80-3b14-11eb-93ee-1bec2171db0e.png)
+
+![condicao_composta](https://user-images.githubusercontent.com/68357896/101832499-4e112d80-3b16-11eb-87c3-c81b928d8810.png)
+
+![condicao_aninhada](https://user-images.githubusercontent.com/68357896/101832513-536e7800-3b16-11eb-806e-49f518f6e68b.png)
+
+![condicao_multipla](https://user-images.githubusercontent.com/68357896/101832521-58cbc280-3b16-11eb-8fef-27a847f25ede.png)
+
+
 
 
 [moduloD-Aula11](https://www.cursoemvideo.com/course/javascript/aulas/condicoes-em-javascript/modulos/condicoes-parte-1-2/)
