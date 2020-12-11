@@ -7,41 +7,54 @@
     <style>
         body {
             background-color: aquamarine;
-            font: normal 18pt Arial;
+            font: normal 16pt Arial;
         }
         h1 {
             text-align: center;
             font: bold 25pt Segoe UI;
             color: rgb(50, 25, 192);
         }
-        input {
-            margin-bottom: 10px;
+        p {
+            margin-top: 5px;
         }
-        div {
-            background-color: rgba(36, 48, 48, 0.253);
+        #txt_pais {
+            width: 130px;
+            height: 28px;
+            margin-top: 8px;
+            font: bold 18px Arial;
+        }
+        #entrada{
+            width: 400px;
+            height: 50px;
+            background-color: rgb(255, 127, 80);
+        }
+        #res{
+            width: 400px;
+            height: 60px;
+            background-color: antiquewhite;
         }
     </style>
 </head>
 <body>
     <h1>Sistema de Nacionalidade</h1>
-   
+    <div id="entrada">
     País de origem: <input type="text" name="txt_pais" id="txt_pais">
     <input type="button" value="VERIFICAR" onclick="check()">
-    <div id="res">analise</div>
-
+    </div>
+    <div id="res"></div>
     <script>
         function check() {
             var pais = document.querySelector("#txt_pais")
             res = document.querySelector("#res")
             pais = String(pais.value)
-            res.innerHTML = `<p>Seu País de origem é: <strong>${pais}</strong></p>`
+            res.innerHTML = `Seu País de origem é: <strong>${pais}</strong>`
             if (pais == "Brasil") {
-                res.innerHTML += `<p>você é brasileiro</p>`
-            }
-            else {
-                res.innerHTML += `<p>você é estrangeiro</p>`
+                res.innerHTML += `<p>Você é brasileiro</p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro</p>`
             }
         }
     </script>
+    
 </body>
 </html>
