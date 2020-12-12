@@ -8,7 +8,7 @@ function verificar() {
     var res = document.querySelector("#res")
     // res.innerHTML=typeof(fano)
     // verificando se o ano esta vazio ou se é maior que o ano atual:
-    if (fano.value.length == 0 || Number(fano.value) > ano) {
+    if (fano.value.length == 0 || Number(fano.value) > ano || fano.value == 0) {
         alert("ERRO: Verifique os dados e tente novamente!")
     } else {         // verifica qual o radio button foi selecionado
         var fsex = document.getElementsByName("radsex")
