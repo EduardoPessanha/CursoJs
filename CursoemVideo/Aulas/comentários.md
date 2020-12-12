@@ -101,8 +101,8 @@ Para usar a template string é obrigatório o uso da crase como delimitador!
 var s = 'Javascript'
 
 **s.length** -> retorna o tamanho da string<br/>
-**s.toUpperCase** -> Converte todos os caracteres alfabeticos de uma String em Maiúsculo.<br/>
-**s.toLowerCase** -> Converte todos os caracteres alfabeticos de uma String em Minúsculo.
+**s.toUpperCase** -> Converte todos os caracteres alfabéticos de uma String em Maiúsculo.<br/>
+**s.toLowerCase** -> Converte todos os caracteres alfabéticos de uma String em Minúsculo.
 
 ### Formatando Números:
 

@@ -1,13 +1,15 @@
 body {
     background: rgb(70, 142, 236);
-    font: normal 15pt Arial;
+    font: normal 15pt Segoe;
 }
 
 header {
     color: white;
     text-align: center;
 }
-
+/* div {
+    text-align: center;
+} */
 section {
     background: white;
     border-radius: 10px;
