@@ -5,10 +5,17 @@
         "fotomanha",
         "fotonoite",
         "fototarde",
+        "fsex",
+        "genero",
         "horamin",
         "msgm",
         "radsex",
         "txtano",
         "video"
+    ],
+    "cSpell.words": [
+        "din",
+        "dinâmicamente",
+        "micamente"
     ]
 }
